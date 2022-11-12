@@ -20,14 +20,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 p-2 shadow m-1">
-                        <form action="#">
+                        <form id="sendForm" action="#">
                             <label for="user_name" class="w-100 my-2">
                                 ENTER USERNAME
-                                <input type="text" class="form-control" placeholder="enter username" required>
+                                <input id="user_name" type="text" class="form-control" placeholder="enter username" required>
                             </label>
                             <label for="user_score" class="w-100 my-2">
                                 ENTER SCORE
-                                <input type="number" max="100" min="0" class="form-control" placeholder="enter score" required>
+                                <input id="user_score" type="number" max="100" min="0" class="form-control" placeholder="enter score" required>
                             </label>
                             <button type="submit" class="btn btn-success w-100">ADD INFORMATION</button>
                         </form>
@@ -37,28 +37,7 @@
                             <thead>
                                 <tr><th>ID</th><th>USERNAME</th><th>USERSCORE</th><th>EDIT</th><th>DELETE</th></tr>
                             </thead>
-                            <tbody id="t-body">
-                                <tr>
-                                    <td>1</td>
-                                    <td>Ismoil</td>
-                                    <td>98</td>
-                                    <td><button class="btn btn-primary w-100">EDIT</button></td>
-                                    <td><button class="btn btn-danger w-100">DELETE</button></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Adham</td>
-                                    <td>68</td>
-                                    <td><button class="btn btn-primary w-100">EDIT</button></td>
-                                    <td><button class="btn btn-danger w-100">DELETE</button></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Bobur</td>
-                                    <td>100</td>
-                                    <td><button class="btn btn-primary w-100">EDIT</button></td>
-                                    <td><button class="btn btn-danger w-100">DELETE</button></td>
-                                </tr>
+                            <tbody class="t-body">
                             </tbody>
                         </table>
                     </div>
@@ -69,6 +48,7 @@
             </div>
         </section>
     </main>
-    <script src="js/main.js"></script>               
+    <script src="js/main.js"></script> 
+    <script src="js/plugin.js"></script>              
 </body>
 </html>
