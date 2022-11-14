@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Something</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div class="toastify">
+        <h5>Muvaffaqiyatli o'chirildi</h5>
+    </div>
+
     <header class="bg-success">
         <div class="container">
             <nav class="nav p-3">
@@ -23,13 +29,13 @@
                         <form id="sendForm" action="#">
                             <label for="user_name" class="w-100 my-2">
                                 ENTER USERNAME
-                                <input id="user_name" type="text" class="form-control" placeholder="enter username" required>
+                                <input id="user_name" type="text" class="form-control" placeholder="enter username" >
                             </label>
                             <label for="user_score" class="w-100 my-2">
                                 ENTER SCORE
-                                <input id="user_score" type="number" max="100" min="0" class="form-control" placeholder="enter score" required>
+                                <input id="user_score" type="number" max="100" min="0" class="form-control" placeholder="enter score" >
                             </label>
-                            <button type="submit" class="btn btn-success w-100">ADD INFORMATION</button>
+                            <button id="add-button" type="submit" class="btn btn-success w-100">ADD INFORMATION</button>
                         </form>
                     </div>
                     <div class="col-md-7 p-2 shadow m-1">

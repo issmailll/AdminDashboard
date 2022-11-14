@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.2",
+    "database.json": "^0.0.4",
     "json-server": "^0.17.1"
   }
 }
