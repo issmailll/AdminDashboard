@@ -1,24 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
-      "user_name": "Ismoil",
-      "user_score": 98
+      "user_name": "ismoiLL_1",
+      "user_score": "99",
+      "id": 1
     },
     {
-      "user_name": "abbos",
-      "user_score": 100,
+      "user_name": "ismail",
+      "user_score": "100",
       "id": 2
-    },
-    {
-      "user_name": "qqer",
-      "user_score": 12,
-      "id": 3
-    },
-    {
-      "user_name": "abbos",
-      "user_score": 12,
-      "id": 4
     }
   ]
 }
