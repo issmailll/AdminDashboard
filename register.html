@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>SIGN UP</title>
+  </head>
+  <body>
+    <main>
+      <section class="login">
+        <div class="container">
+          <div class="modal-toast alert alert-danger hide-toast p-5 w-50 mt-3 mx-auto">
+
+          </div>
+          <div class="col-md-12">
+            <div class="card p-3 shadow bg-white">
+              <h4 class="text-center text-success">SIGN UP</h4>
+              <form class="form" action="#" id="reg">
+                <label for="userLogName" class="w-100 my-2">
+                  <input
+                    id="userRegName"
+                    placeholder="login or e-mail"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </label>
+                <label for="userLogPassword" class="w-100 my-2">
+                  <input
+                    id="userRegPassword"
+                    placeholder="enter password"
+                    type="password"
+                    class="form-control"
+                    required
+                  />
+                </label>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="btn btn-success w-100 p-2"
+                >
+                  SIGN UP
+                </button>
+                <hr />
+                <a
+                  class="text-center d-block link text-uppercase text-success"
+                  href="login.html"
+                  >kirish</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+  <script src="./js/auth.js"></script>
+  <script src="js/plugin.js"></script>
+</html>

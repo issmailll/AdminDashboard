@@ -17,7 +17,7 @@
     </div>
 
     <!-- Modal -->
-     <div
+    <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -69,13 +69,16 @@
         </div>
       </div>
     </div>
-
-
     <!-- ------------------------------------------------------------------------------------------------- -->
     <header class="bg-success">
       <div class="container">
-        <nav class="nav p-3">
+        <nav class="nav d-flex justify-content-between p-3">
           <h2 class="nav__log text-white">ADMIN DASHBOARD</h2>
+          <div class="ul">
+            <button id="loginUser" class="btn btn-info mx-3">ismoil</button>
+            <button id="logOut" class="btn btn-danger">LOG OUT</button>
+          </div>
+          
         </nav>
       </div>
     </header>
@@ -128,7 +131,10 @@
                 <tbody class="t-body"></tbody>
               </table>
             </div>
-            <div class="col p-2 bg-light shadow m-1"></div>
+            <div class="col p-2 bg-light shadow m-1">
+              <h6 class="text-center m-3 text-primary">Average score:</h6>
+              <h3 class="text-center" id="averager_score">100</h3>
+            </div>
           </div>
         </div>
       </section>

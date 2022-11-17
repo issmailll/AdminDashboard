@@ -5,6 +5,7 @@ const sendForm = document.querySelector("#sendForm");
 const elToastify = document.querySelector(".toastify");
 const elAddButton = document.querySelector("#add-button");
 const sendFormEdit = document.querySelector("#sendFormEdit");
+const averagerScore = document.querySelector("#averager_score");
 
 // GET USER LIST ----------------------------------------------------------------------------------------
 function getUser() {
@@ -18,6 +19,14 @@ getUser();
 // RENDER FUNCTION ---------------------------------------------------------------------------------------
 
 function renderUsers(data = []) {
+  // AVERAGE SCORE ---------------------------------------------------------------------------------------
+  let averageScore = data.reduce((a, b) => {
+    return a * 1 + b.user_score * 1;
+  }, 0);
+
+  averagerScore.innerHTML = ((averageScore / data.length) * 1).toFixed(2);
+  // AVERAGE SCORE FINISHED ----------------------------------------------------------------------------
+
   data.length > 0
     ? data.forEach((user) => {
         const tr = createElement(
@@ -105,7 +114,7 @@ const userNameInputId = document.querySelector("#user_nameEdit");
 userNameInputId.value.trim();
 const userScoreInputId = document.querySelector("#user_scoreEdit");
 userScoreInputId.value.trim();
-const editButtonForm = document.querySelector("#add-buttonEdit")
+const editButtonForm = document.querySelector("#add-buttonEdit");
 
 tBody.addEventListener("click", (evt) => {
   if (evt.target.classList.contains("btn-primary")) {
@@ -168,3 +177,23 @@ function setValue(data) {
   userScoreInputId.value = data.user_score;
 }
 // EDIT FUNCTION FINISHED -----------------------------------------------------------------------
+
+const loginUser = document.querySelector("#loginUser");
+const logOut = document.querySelector("#logOut");
+
+function logined() {
+  let loggedUsername = localStorage.getItem("userName");
+  if (loggedUsername) {
+    loginUser.innerHTML = `${loggedUsername}`;
+  } else {
+    window.location.replace("login.html");
+  }
+}
+logined();
+
+logOut.addEventListener("click", () => {
+  localStorage.clear();
+  logined();
+});
+
+

@@ -14,3 +14,14 @@ body{
     transition:transform 1s cubic-bezier(1,-0.21, 0, 1.01);
     z-index: 9999999;
 }
+.card{
+    max-width: 620px;
+    margin: 100px auto;
+}
+.modal-toast{
+    position: relative;
+    transition: transform 0.1s linear;
+}
+.hide-toast{
+    transform: translateY(-220%);
+}
